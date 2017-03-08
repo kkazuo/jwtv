@@ -1,0 +1,9 @@
+PKG core async
+PKG base64
+PKG cohttp
+PKG cstruct
+PKG nocrypto
+PKG uri
+PKG yojson
+S src
+B _build/**

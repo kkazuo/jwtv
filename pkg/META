@@ -1,0 +1,8 @@
+version         = "0.1.0"
+description     = "JWT verifier of OCaml"
+requires        = "core async base64 cohttp.async cstruct nocrypto uri yojson"
+archive(byte)   = "jwtv.cma"
+archive(native) = "jwtv.cmxa"
+plugin(byte)    = "jwtv.cma"
+plugin(native)  = "jwtv.cmxs"
+exists_if       = "jwtv.cma"

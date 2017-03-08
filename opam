@@ -1,0 +1,27 @@
+opam-version: "1.2"
+maintainer: "Koga Kazuo <obiwanko@me.com>"
+authors: ["Koga Kazuo <obiwanko@me.com>"]
+homepage: "https://github.com/kkazuo/jwtv"
+doc: "https://kkazuo.github.io/jwtv/doc"
+dev-repo: "https://github.com/kkazuo/jwtv.git"
+bug-reports: "https://github.com/kkazuo/jwtv/issues"
+tags: [ "jwt" "openid" ]
+license: "MIT"
+available: [ocaml-version >= "4.02.0"]
+depends:[
+  "ocamlfind" {build}
+  "ocamlbuild" {build}
+  "topkg" {build}
+  "core"
+  "async"
+  "base64"
+  "cohttp"
+  "cstruct"
+  "nocrypto"
+  "uri"
+  "yojson"
+]
+build: [[
+  "ocaml" "pkg/pkg.ml" "build"
+          "--pinned" "%{pinned}%"
+]]

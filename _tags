@@ -1,0 +1,2 @@
+true : thread, bin_annot, safe_string, package(core), package(async), package(base64), package(cohttp.async), package(cstruct), package(nocrypto), package(uri), package(yojson)
+<src> : include
